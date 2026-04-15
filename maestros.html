@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maestros BTPI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #0A1F44;
+    color: white;
+}
+
+/* TÍTULO */
+header {
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* CONTENEDOR */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+/* TARJETAS */
+.card {
+    width: 300px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    text-align: center;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    transition: 0.4s;
+    animation: aparecer 1s ease forwards;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: rgba(255,255,255,0.15);
+}
+
+/* FOTO MAESTRO */
+.card img {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* NOMBRE */
+.card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+/* CARGO */
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/* TEXTO */
+.card p {
+    font-size: 14px;
+    line-height: 1.5;
+    opacity: 0.85;
+}
+
+/* ANIMACIÓN */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 36px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Maestros BTPI</h1>
+    <p>Docentes encargados de la formación técnica y profesional</p>
+</header>
+
+<section class="container">
+
+    <!-- LIC STANLY -->
+    <div class="card">
+        <img src="img/stanly.jpg" alt="Stanly Rodríguez">
+        <h2>Lic. Stanly Rodríguez</h2>
+        <h3>Docente de:</h3>
+        <p>Programacion II, Gestion Empresarial, Redes Informaticas</p>
+    </div>
+
+    <!-- LIC KARLA -->
+    <div class="card">
+        <img src="img/karla.jpg" alt="Karla Andrade">
+        <h2>Lic. Karla Andrade</h2>
+        <h3>Docente de: </h3>
+        <p>Diseño Web, Mantenimiento y Reparacion, Producciones Digitales.</p>
+    </div>
+	
+</section>
+
+</body>
+</html>

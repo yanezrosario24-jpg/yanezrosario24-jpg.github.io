@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redes Sociales BTPI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #0A1F44;
+    color: white;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 60px 20px 20px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+}
+
+header p {
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+/* CONTENEDOR (FLEX ALINEADO) */
+.container {
+    display: flex;
+    justify-content: center;   /* centra horizontal */
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap; /* responsive */
+    padding: 50px;
+}
+
+/* TARJETAS */
+.card {
+    width: 250px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: 0.3s;
+    backdrop-filter: blur(10px);
+    animation: aparecer 1s ease forwards;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: rgba(255,255,255,0.15);
+}
+
+/* ICONOS */
+.card img {
+    width: 70px;
+    margin-bottom: 15px;
+}
+
+/* TITULO */
+.card h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+}
+
+/* BOTÓN */
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: white;
+    color: #0A1F44;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.card a:hover {
+    background: #A7D8FF;
+}
+
+/* ANIMACIÓN */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 36px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Redes Sociales BTPI</h1>
+    <p>Síguenos para conocer más sobre nuestra carrera y actividades</p>
+</header>
+
+<section class="container">
+
+    <!-- FACEBOOK -->
+    <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+        <h2>Facebook</h2>
+        <a href="https://www.facebook.com/share/1CseifdqSS/?mibextid=wwXIfr" target="_blank" >Seguir</a>
+<center>
+    </div>
+
+    <!-- TIKTOK -->
+    <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok">
+        <h2>TikTok</h2>
+        <a href="https://www.tiktok.com/@timewith12?_r=1&_t=ZS-95XuAYVbHFc" target="_blank" >Seguir</a>
+    </div>
+
+    <!-- WHATSAPP -->
+    <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+        <h2>WhatsApp</h2>
+        <a href="https://web.whatsapp.com/" target="_blank" >Contactar</a>
+    </div>
+
+</section>
+
+</body>
+</html>

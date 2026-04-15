@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 👈 cambia esto */
+  gap: 40px; /* controla la distancia general */
+  background-color: #0A1F44;
+}
+
+/* MENÚ IZQUIERDA Y DERECHA */
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color:white; /* texto negro */
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+/* EFECTO HOVER */
+.menu a:hover {
+  background-color:#A7D8FF ; /* azul oscuro */
+  color:black;
+}
+
+/* LOGO CENTRO */
+.logo img {
+  height: 100px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+  <!-- IZQUIERDA -->
+  <div class="menu">
+    <a href="inicio.html" target="contenido">Inicio</a>
+    <a href="areas.html" target="contenido">Areas</a>
+    <a href="maestros.html" target="contenido">Maestros</a>
+  </div>
+
+  <!-- LOGO CENTRO -->
+  <div class="logo">
+    <img src="img/logobtpi.png" alt="Logo">
+  </div>
+
+  <!-- DERECHA -->
+  <div class="menu">
+    <a href="programadetv.html" target="contenido">Programa</a>
+    <a href="eventos.html" target="contenido">Eventos</a>
+    <a href="contacto.html" target="contenido">Contacto</a>
+  </div>
+
+</header>
+
+</body>
+</html>
