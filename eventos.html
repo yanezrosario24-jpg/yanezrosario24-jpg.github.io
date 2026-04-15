@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eventos BTPI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #0A1F44;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px 20px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+}
+
+header p {
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 50px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+    animation: aparecer 1s ease forwards;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: rgba(255,255,255,0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 15px;
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 36px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Eventos</h1>
+    <p>Logros obtenidos por los estudiantes de BTPI</p>
+</header>
+
+<section class="container">
+
+    
+    <div class="card">
+        <img src="img/senoritacultura.jpg" alt="Señorita Cultura">
+        <div class="card-content">
+            <h2>Señorita Cultura</h2>
+            <p>Representación destacada de la institución en actividad cultural escolar.</p>
+        </div>
+    </div>
+
+    
+    <div class="card">
+        <img src="img/reinaambiente.jpg" alt="Reina Medio Ambiente">
+        <div class="card-content">
+            <h2>Reina del Medio Ambiente</h2>
+            <p>Reconocimiento por liderazgo y participación en actividad de concientización ambiental.</p>
+        </div>
+    </div>
+	    
+	<div class="card">
+        <img src="img/feria.jpg" >
+        <div class="card-content">
+            <h2>Feria tecnologica</h2>
+            <p>Actividad donde los alumnos demostraban su creatividad y habilidades de programacion con proyectos llamativos.</p>
+        </div>
+    </div>
+	
+	<div class="card">
+        <img src="img/redes.jpg" >
+        <div class="card-content">
+            <h2>Maquetas de Redes informaticas</h2>
+            <p>Representación y explicacion de Redes informaticas.</p>
+        </div>
+    </div>
+	
+	<div class="card">
+        <img src="img/cumple.jpg" >
+        <div class="card-content">
+            <h2>Cumpleaños de curso</h2>
+            <p>Celebracion de cumpleañeros de Enero-Abril.</p>
+        </div>
+    </div>
+	
+    <div class="card">
+        <img src="img/feria.png" alt="Feria Tecnológica">
+        <div class="card-content">
+            <h2>Proximamente!</h2>
+            <p>La Feria de la Inteligencia Artificial es un evento donde los estudiantes presentaran proyectos tecnológicos innovadores basados en IA.</p>
+        </div>
+    </div>
+
+</section>
+
+</body>
+</html>
